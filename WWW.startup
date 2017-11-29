@@ -1,0 +1,1 @@
+ifconfig eth0 200.155.29.1 netmask 255.255.255.0 broadcast 200.155.29.255 up
