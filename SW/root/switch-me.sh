@@ -16,6 +16,7 @@ brctl addif br0 eth13
 brctl addif br0 eth14
 brctl addif br0 eth15
 brctl addif br0 eth16
+brctl addif br0 eth17
 ifconfig eth0 0.0.0.0
 ifconfig eth1 0.0.0.0
 ifconfig eth2 0.0.0.0
@@ -33,4 +34,5 @@ ifconfig eth13 0.0.0.0
 ifconfig eth14 0.0.0.0
 ifconfig eth15 0.0.0.0
 ifconfig eth16 0.0.0.0
+ifconfig eth17 0.0.0.0
 ifconfig br0 192.168.1.10 netmask 255.255.255.0 broadcast 192.168.1.255
