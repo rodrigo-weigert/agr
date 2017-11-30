@@ -1,2 +1,7 @@
 ifconfig eth0 192.168.1.2 netmask 255.255.0.0 broadcast 192.168.255.255 up
 ifconfig eth1 200.155.29.17 netmask 255.255.255.0 broadcast 200.155.29.255 up
+route add -net 10.0.0.0 netmask 255.255.0.0 gw 192.168.1.1 dev eth0
+iptables -F
+iptables -F -t nat
+iptables -F -t mangle
+iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
