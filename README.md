@@ -6,3 +6,11 @@ O arquivo `NETKIT_FILESYSTEM.tar.gz` está dividido em partes devido ao limite d
 Para uma inicialização mais rápida do lab, alterar o valor `MAX_SIMULTANEOUS_VMS` em `$NETKIT_HOME/netkit.conf` para `0`.
 
 Para uma finalização segura e rápida do lab, use `lhalt -q;lclean` dentro do diretório raiz do lab. Se o sistema operacional hospedeiro é de 64 bits e o comando `lhalt` não consegue finalizar as máquinas, tente instalar a biblioteca `libncurses5:i386`.
+
+# Informações Úteis
+
+IP interno do servidor da empresa: `10.0.0.2`
+IP externo da empresa: `200.155.29.17`
+IP da máquina WWW (simula acesso à internet a partir da empresa): `200.155.29.1`
+Senha do usuário `root` no MySQL do servidor: `maxima`
+Na máquina WWW, o site da empresa também pode ser acessado com `www.maxima.com.br` ou apenas `maxima.com.br`
