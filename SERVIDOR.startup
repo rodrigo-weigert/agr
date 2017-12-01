@@ -1,3 +1,5 @@
 ifconfig eth0 10.0.0.2 netmask 255.255.0.0 broadcast 10.0.255.255 up
 route add default gw 10.0.0.1 dev eth0
 /etc/init.d/apache2 start
+chmod 644 /etc/mysql/my.cnf
+/etc/init.d/mysql start
