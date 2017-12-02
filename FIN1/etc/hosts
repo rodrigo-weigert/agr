@@ -5,6 +5,8 @@
 127.0.0.1 localhost localhost.localdomain
 10.0.0.2 maxima.com.br
 10.0.0.2 www.maxima.com.br
+200.155.29.1 www.website.com
+200.155.29.1 website.com
 
 ::1     ip6-localhost ip6-loopback
 fe00::0 ip6-localnet
