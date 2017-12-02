@@ -11,8 +11,10 @@ Para uma finalização segura e rápida do lab, use `lhalt -q;lclean` dentro do 
 
 * IP interno do servidor da empresa: `10.0.0.2`
 * IP externo da empresa: `200.155.29.17`
-* Servudor pode ser acessado tanto internamente como externamente com `maxima.com.br` ou `www.maxima.com.br`
+	* Servidor pode ser acessado tanto internamente como externamente (`WWW`) com `maxima.com.br` ou `www.maxima.com.br`
+	* Servidor pode ser acessado via SSH. Senha do usuário `root`: `root`.
 * IP da máquina `WWW` (simula acesso à internet a partir da empresa): `200.155.29.1`
+	* `WWW` roda apache e oferece uma página HTML para teste.
+	* Pode ser acessado dos computadores da empresa também com `www.website.com` ou `website.com`.
 * Senha do usuário `root` no MySQL do servidor: `maxima`
-* Na máquina `WWW`, o site da empresa também pode ser acessado com `www.maxima.com.br` ou `maxima.com.br`
 * O _osCommerce_ está instalado no servidor e pronto para ser configurado. Basta acessar `maxima.com.br/install` (ou `127.0.0.1/install`, se estiver no próprio servidor)
