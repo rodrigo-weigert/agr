@@ -5,5 +5,8 @@ iptables -F
 iptables -F -t nat
 iptables -F -t mangle
 iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
-iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to 10.0.0.2
-iptables -t nat -A PREROUTING -p tcp --dport 3306 -j DNAT --to 10.0.0.2
+
+# Permite acesso externo http ao servidor, bem como conexões http
+# dos outros pcs. Efetivamente, redireciona novas conexões externas http
+# para o servidor, mas não altera outras conexões.
+iptables -t nat -A PREROUTING -p tcp ! -s 10.0.0.0/16 --dport 80 -m state --state NEW -j DNAT --to 10.0.0.2
