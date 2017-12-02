@@ -10,3 +10,6 @@ iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
 # dos outros pcs. Efetivamente, redireciona novas conexões externas http
 # para o servidor, mas não altera outras conexões.
 iptables -t nat -A PREROUTING -p tcp ! -s 10.0.0.0/16 --dport 80 -m state --state NEW -j DNAT --to 10.0.0.2
+
+# SSH no servidor
+iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to 10.0.0.2
